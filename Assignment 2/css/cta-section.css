@@ -1,0 +1,48 @@
+.cta-section {
+	height: 459px;
+  width: 100%;
+  max-width: 1170px;
+  margin: 180px auto 130px;
+	background-image: url("../assets/image/cta-img.png");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  position: relative;
+}
+.cta-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-cta-dark-bg);
+  /* background-color: tomato; */
+  z-index: 1;
+}
+.cta-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 46px;
+	padding: 28px;
+  position: relative;
+  z-index: 2;
+}
+.cta-content h2 {
+	color: white;
+	text-align: center;
+	text-wrap: balance;
+}
+.cta-content button {
+	width: 210px;
+	height: 80px;
+	color: white;
+	background-color: var(--color-primary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 26px;
+}
