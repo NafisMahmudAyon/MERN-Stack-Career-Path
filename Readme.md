@@ -3,3 +3,7 @@
 ## Assignment 1 - HTML Challenge
 
 Please check `assignment-1` branch
+
+## Assignment 2 - HTML & CSS Challenge
+
+Please check `assignment-2` branch
