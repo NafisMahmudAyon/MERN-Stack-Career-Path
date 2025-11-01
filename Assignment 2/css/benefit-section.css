@@ -1,0 +1,87 @@
+.benefit-section{
+  padding-inline: 28px;
+  max-width: 1170px;
+  margin-inline: auto;
+  margin-top: 60px;
+}
+.benefit-img-wrapper{
+  width: 100%;
+  background-color: var(--color-secondary-bg);
+  padding-inline: 24px;
+  margin-bottom: 56px;
+}
+.benefit-img-wrapper img{
+  width: 100%;
+  position: relative;
+  top: -24px;
+  max-width: 445px;
+  object-fit: cover;
+}
+.benefit-content{
+  position: relative;
+}
+.benefit-content::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -24px;
+  width: 174px;
+  height: 174px;
+  background-image: url("../assets/image/polcadot.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.benefit-content h2, .benefit-content h3{
+  text-align: center;
+}
+.benefit-content ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: url("../assets/image/bullet.svg");
+  width: max-content;
+  margin: 0 auto;
+}
+.benefit-content ul li{
+  font-size: 16px;
+}
+
+@media (width >= 768px){
+  .benefit-section{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 80px;
+    margin-top: 120px;
+  }
+  .benefit-img-wrapper{
+    background-color: var(--color-image-bg);
+    max-height: 600px;
+    margin-bottom: 0px;
+  }
+  .benefit-img-wrapper img{
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: calc(100% - 90px);
+  }
+  .benefit-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+  }
+  .benefit-content::before{
+    top: 120px;
+    left: -120px;
+  }
+  .benefit-content h2, .benefit-content h3{
+    text-align: left;
+  }
+  .benefit-content ul{
+    width: 100%;
+    margin: 0;
+    list-style-position: inside;
+  }
+}

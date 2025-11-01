@@ -1,0 +1,144 @@
+.hero-section{
+  padding-top: 30px;
+	position: relative;
+}
+.hero-img::after {
+	content: "";
+	position: absolute;
+	bottom: -40px;
+	right: -40px;
+	width: 174px;
+	height: 174px;
+	background: url("../assets/image/polcadot.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.hero-feature {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.hero-section-wrapper {
+	position: relative;
+	overflow: hidden;
+	padding-inline: 28px;
+	max-width: 1170px;
+	height: max-content;
+	margin: 0 auto;
+}
+.hero-section::after {
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--color-bg);
+	position: absolute;
+	height: calc(100% - 60px);
+	z-index: -1;
+}
+.hero-content {
+	max-width: 1128px;
+	margin: 0 auto;
+}
+.hero-content h1,
+.hero-content p {
+	text-align: center;
+	text-wrap: balance;
+}
+
+.hero-content button {
+	gap: 30px;
+	padding: 24px 30px;
+	width: 100%;
+	margin-bottom: 44px;
+}
+
+@media (width >= 768px) {
+	.hero-section::after {
+		height: calc(100% - 90px);
+	}
+  .hero-img{
+    height: calc(100% + 60px);
+  }
+	.hero-img img{
+		position: relative;
+		height: 100%;
+		max-height: 500px;
+		width: 100%;
+    object-fit: contain;
+  }
+	.hero-content {
+		padding: 40px;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 40px;
+		padding-top: 50px;
+	}
+	.hero-content h1,
+	.hero-content p {
+		text-align: left;
+	}
+	.hero-content p{
+    font-size: 16px;
+  }
+	.hero-content button {
+		width: auto;
+		gap: 28px;
+	}
+	.hero-feature {
+		top: 200px;
+		right: 0;
+		width: 100%;
+	}
+	.hero-feature-1 {
+		position: absolute;
+		top: 80px;
+		left: -40px;
+		display: inline-flex;
+		width: fit-content;
+	}
+	.hero-feature-2 {
+		position: absolute;
+		top: 0;
+		right: -20px;
+		display: inline-flex;
+		width: fit-content;
+	}
+  .brand-logo-section{
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    margin-top: -40px;
+    margin-bottom: 44px;
+    padding-inline: 40px;
+    max-width: 512px;
+  }
+  .brand-logo-1{
+    justify-content: start;
+    gap: 10px;
+    display: inline-flex;
+    width: fit-content;
+  }
+}
+@media (width >= 1024px) {
+	.hero-section::after {
+		height: calc(100% - 60px);
+	}
+	.hero-content-text{
+		padding-top: 50px;
+	}
+	.hero-content {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 120px;
+    padding: 0px;
+	}
+  .brand-logo-section{
+    max-width: 1128px;
+    margin: 0 auto;
+		margin-top: -50px;
+		padding: 20px 24px 0;
+    margin-bottom: 88px;
+  }
+}

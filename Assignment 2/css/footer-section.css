@@ -1,0 +1,115 @@
+.footer-section {
+	padding-inline: 28px;
+	display: grid;
+	grid-template-columns: 1fr;
+	max-width: 1170px;
+	row-gap: 70px;
+	margin: 0 auto;
+	margin-top: 60px;
+	text-align: center;
+}
+.footer-content h2 {
+	color: var(--color-primary);
+	margin-bottom: 36px;
+}
+.footer-content p {
+	text-wrap: balance;
+	margin-bottom: 30px;
+}
+.footer-social-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 18px;
+}
+.footer-link-content h2 {
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 42px;
+}
+.footer-link-content ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	font-size: 16px;
+}
+footer a {
+	text-decoration: none;
+	color: var(--color-text);
+	cursor: pointer;
+}
+.footer-sub-content h2 {
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 42px;
+}
+.footer-sub-content p {
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+.footer-sub-content div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.footer-sub-content div input {
+	background-color: var(--color-secondary-bg);
+	padding: 18px 24px;
+	border: none;
+	font-size: 14px;
+	color: rgb(29, 29, 31, 0.51);
+	text-align: center;
+	width: 100%;
+}
+.footer-sub-content div button {
+	background-color: var(--color-primary);
+	padding: 18px 24px;
+	border: none;
+	font-size: 14px;
+	width: 100%;
+	color: var(--color-text-white);
+}
+.copyright {
+  margin-top: 80px;
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+@media (width >= 768px) {
+	.footer-section {
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+	}
+	.footer-content {
+		flex: 2;
+		text-align: start;
+	}
+	.footer-social-icon {
+		justify-content: start;
+	}
+	.footer-link-content {
+		flex: 1;
+	}
+	.footer-sub-content {
+		flex: 2;
+    text-align: left;
+	}
+	.footer-sub-content div {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 10px;
+	}
+  .footer-sub-content div input{
+    flex: 2;
+  }
+  .footer-sub-content div button{
+    flex: 1;
+  }
+}
