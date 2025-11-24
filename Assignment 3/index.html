@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafis Mahmud Ayon | Dev Portfolio</title>
+
+    <link rel="stylesheet" href="output.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script src="./script.js" defer></script>
+</head>
+
+<body class="bg-dark text-text-300 font-sans antialiased selection:bg-primary selection:text-text">
+    <header class="fixed w-full top-0 z-50 bg-dark/90 backdrop-blur-md border-b border-text-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-text flex items-center gap-2">
+                <span class="text-primary">&lt;</span>Nafis<span class="text-primary">/&gt;</span>
+            </a>
+
+            <nav class="hidden md:flex gap-8 font-medium">
+                <a href="#home" class="hover:text-primary transition duration-300">Home</a>
+                <a href="#skills" class="hover:text-primary transition duration-300">Skills</a>
+                <a href="#services" class="hover:text-primary transition duration-300">Services</a>
+                <a href="#experience" class="hover:text-primary transition duration-300">Experience</a>
+                <a href="#contact" class="hover:text-primary transition duration-300">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex gap-4 items-center">
+                <button class="theme-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contact"
+                    class="hidden md:block px-5 py-2 bg-primary hover:bg-indigo-600 text-text rounded-full transition duration-300 shadow-lg shadow-indigo-500/30">
+                    Hire Me
+                </a>
+            </div>
+
+            <div class="md:hidden flex gap-4 items-center">
+                <button class="theme-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="menu-btn" class="text-2xl text-text focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-secondary border-t border-text-700 absolute w-full">
+            <div class="flex flex-col px-6 py-4 gap-4">
+                <a href="#home" class="block hover:text-primary mobile-link">Home</a>
+                <a href="#skills" class="block hover:text-primary mobile-link">Skills</a>
+                <a href="#services" class="block hover:text-primary mobile-link">Services</a>
+                <a href="#experience" class="block hover:text-primary mobile-link">Experience</a>
+                <a href="#contact" class="block hover:text-primary mobile-link">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="min-h-screen flex items-center pt-20 relative overflow-hidden">
+        <div class="absolute top-20 right-0 w-72 h-72 bg-primary/20 rounded-full blur-[100px]"></div>
+        <div class="absolute bottom-10 left-0 w-72 h-72 bg-purple-600/20 rounded-full blur-[100px]"></div>
+
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal order-2 md:order-1">
+                <p class="text-primary font-semibold mb-2 tracking-wider uppercase">Hello, I am <span
+                        class="text-text">Nafis</span></p>
+                <h1 class="text-5xl md:text-7xl font-bold text-text mb-6 leading-tight">
+                    Full Stack <br> <span
+                        class="text-transparent bg-clip-text bg-linear-to-r from-primary to-purple-500">Developer</span>
+                </h1>
+                <p class="text-lg text-text-400 mb-8 max-w-lg">
+                    I create modern, scalable, and responsive web applications. Transforming ideas into digital reality
+                    with clean code and creative design.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact"
+                        class="px-7 py-3 bg-primary hover:bg-indigo-600 text-text font-semibold rounded-lg transition duration-300 shadow-lg shadow-indigo-500/40">
+                        Let's Talk
+                    </a>
+                    <a href="#experience"
+                        class="px-7 py-3 border border-text-600 hover:border-primary hover:text-primary text-text font-semibold rounded-lg transition duration-300">
+                        View Work
+                    </a>
+                </div>
+
+                <div class="mt-8 flex gap-5 text-xl text-text-400">
+                    <a href="#" class="hover:text-text transition-all ease-in-out duration-300"><i
+                            class="fab fa-github"></i></a>
+                    <a href="#" class="hover:text-text transition-all ease-in-out duration-300"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-text transition-all ease-in-out duration-300"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-text transition-all ease-in-out duration-300"><i
+                            class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+
+            <div class="reveal order-1 md:order-2 flex justify-center relative">
+                <div class="relative w-64 h-64 md:w-96 md:h-96">
+                    <div
+                        class="absolute inset-0 bg-linear-to-tr from-primary to-purple-500 rounded-full animate-pulse opacity-20">
+                    </div>
+                    <img src="https://api.dicebear.com/9.x/micah/svg?seed=John&backgroundColor=1e293b" alt="Profile"
+                        class="rounded-full w-full h-full object-cover border-4 border-secondary relative z-10 shadow-2xl">
+
+                    <div
+                        class="absolute -bottom-4 -right-4 bg-secondary p-4 rounded-xl border border-text-700 shadow-xl z-20 flex items-center gap-3 floating">
+                        <div class="bg-green-500/20 p-2 rounded-full text-green-400">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-text-400">Experience</p>
+                            <p class="text-text font-bold">5+ Years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-secondary/30">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-text mb-4">My <span class="text-primary">Skills</span>
+                </h2>
+                <p class="text-text-400 max-w-xl mx-auto">Technologies and tools I use to build high-performance
+                    websites and applications.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="reveal space-y-6">
+                    <h3 class="text-xl font-semibold text-text mb-6 flex items-center gap-2">
+                        <i class="fas fa-laptop-code text-primary"></i> Technical
+                    </h3>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-medium">HTML5 & CSS3</span>
+                            <span class="text-primary">95%</span>
+                        </div>
+                        <div class="w-full bg-text-700 rounded-full h-2.5">
+                            <div class="reveal-progress bg-primary h-2.5 rounded-full w-[95%] flow-95"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-medium">JavaScript (ES6+)</span>
+                            <span class="text-primary">90%</span>
+                        </div>
+                        <div class="w-full bg-text-700 rounded-full h-2.5">
+                            <div class="reveal-progress bg-primary h-2.5 rounded-full w-[90%] flow-90"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-medium">React JS</span>
+                            <span class="text-primary">92%</span>
+                        </div>
+                        <div class="w-full bg-text-700 rounded-full h-2.5">
+                            <div class="reveal-progress bg-primary h-2.5 rounded-full w-[92%] flow-92"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal grid grid-cols-2 gap-4 content-start">
+                    <h3 class="text-xl font-semibold text-text mb-2 col-span-2 flex items-center gap-2">
+                        <i class="fas fa-tools text-primary"></i> Tools & Others
+                    </h3>
+
+                    <div
+                        class="bg-secondary p-4 rounded-lg border border-text-700 hover:border-primary transition text-center group">
+                        <i
+                            class="fab fa-git-alt text-3xl mb-3 text-text-500 group-hover:text-orange-500 transition"></i>
+                        <p>Git & GitHub</p>
+                    </div>
+                    <div
+                        class="bg-secondary p-4 rounded-lg border border-text-700 hover:border-primary transition text-center group">
+                        <i class="fab fa-figma text-3xl mb-3 text-text-500 group-hover:text-pink-500 transition"></i>
+                        <p>Figma</p>
+                    </div>
+                    <div
+                        class="bg-secondary p-4 rounded-lg border border-text-700 hover:border-primary transition text-center group">
+                        <i class="fas fa-database text-3xl mb-3 text-text-500 group-hover:text-blue-500 transition"></i>
+                        <p>SQL / MongoDB</p>
+                    </div>
+                    <div
+                        class="bg-secondary p-4 rounded-lg border border-text-700 hover:border-primary transition text-center group">
+                        <i class="fab fa-docker text-3xl mb-3 text-text-500 group-hover:text-blue-400 transition"></i>
+                        <p>Docker</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-text mb-4">What I <span class="text-primary">Do</span>
+                </h2>
+                <p class="text-text-400 max-w-xl mx-auto">I provide high-quality web development solutions tailored to
+                    your specific needs.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="reveal bg-secondary p-8 rounded-2xl hover:-translate-y-2 transition duration-300 border border-text-800 hover:border-primary group">
+                    <div
+                        class="w-14 h-14 bg-text-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition duration-300">
+                        <i class="fas fa-paint-brush text-2xl text-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-text mb-3">UI/UX Design</h3>
+                    <p class="text-text-400 text-sm leading-relaxed">
+                        Creating visually appealing and user-friendly interfaces. I focus on user experience to ensure
+                        engagement.
+                    </p>
+                </div>
+
+                <div
+                    class="reveal bg-secondary p-8 rounded-2xl hover:-translate-y-2 transition duration-300 border border-text-800 hover:border-primary group">
+                    <div
+                        class="w-14 h-14 bg-text-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition duration-300">
+                        <i class="fas fa-code text-2xl text-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-text mb-3">Web Development</h3>
+                    <p class="text-text-400 text-sm leading-relaxed">
+                        Building fast, secure, and responsive websites using the latest technologies like HTML,
+                        Tailwind, and React.
+                    </p>
+                </div>
+
+                <div
+                    class="reveal bg-secondary p-8 rounded-2xl hover:-translate-y-2 transition duration-300 border border-text-800 hover:border-primary group">
+                    <div
+                        class="w-14 h-14 bg-text-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition duration-300">
+                        <i class="fas fa-mobile-alt text-2xl text-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-text mb-3">Responsive Design</h3>
+                    <p class="text-text-400 text-sm leading-relaxed">
+                        Ensuring your website looks perfect on all devices, from large desktop screens to mobile phones.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-secondary/30">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-text mb-4">Work <span
+                        class="text-primary">Experience</span></h2>
+                <p class="text-text-400">My professional journey and career highlights.</p>
+            </div>
+
+            <div class="relative timeline-line max-w-4xl mx-auto reveal">
+
+                <div class="mb-12 md:flex md:justify-between items-center w-full">
+                    <div class="hidden md:block w-5/12"></div>
+
+                    <div
+                        class="z-20 flex items-center order-1  bg-primary shadow-xl w-8 h-8 rounded-full absolute -left-3.75 md:left-1/2 md:-translate-x-1/2 -mt-1">
+                        <h1 class="mx-auto font-semibold text-sm text-text">1</h1>
+                    </div>
+
+                    <div
+                        class="order-1 bg-secondary border border-text-700 rounded-xl shadow-xl w-[96%] md:w-5/12 px-6 py-6 ml-6 md:ml-0">
+                        <span class="text-primary text-sm font-bold">2022 - Present</span>
+                        <h3 class="font-bold text-text text-xl mt-1">Senior Front-end Developer</h3>
+                        <p class="text-text-400 text-sm mb-2">TechSolutions Inc.</p>
+                        <p class="text-sm text-text-500 leading-snug">
+                            Led the frontend team in rebuilding the legacy platform using React and Tailwind CSS.
+                            improved site performance by 40%.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mb-12 md:flex md:justify-between items-center w-[96%] md:w-full flex-row-reverse">
+                    <div class="hidden md:block w-5/12"></div>
+
+                    <div
+                        class="z-20 flex items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full absolute -left-3.75 md:left-1/2 md:-translate-x-1/2 -mt-1 border-2 border-text-600">
+                        <h1 class="mx-auto font-semibold text-sm text-text">2</h1>
+                    </div>
+
+                    <div
+                        class="order-1 bg-secondary border border-text-700 rounded-xl shadow-xl w-full md:w-5/12 px-6 py-6 ml-6 md:mr-0">
+                        <span class="text-primary text-sm font-bold">2020 - 2022</span>
+                        <h3 class="font-bold text-text text-xl mt-1">Junior Web Developer</h3>
+                        <p class="text-text-400 text-sm mb-2">Creative Agency Ltd.</p>
+                        <p class="text-sm text-text-500 leading-snug">
+                            Collaborated with designers to implement landing pages. Maintained Wordpress themes and
+                            developed custom plugins.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mb-8 md:flex md:justify-between items-center w-[96%] md:w-full">
+                    <div class="hidden md:block w-5/12"></div>
+
+                    <div
+                        class="z-20 flex items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full absolute -left-3.75 md:left-1/2 md:-translate-x-1/2 -mt-1 border-2 border-text-600">
+                        <h1 class="mx-auto font-semibold text-sm text-text">3</h1>
+                    </div>
+
+                    <div
+                        class="order-1 bg-secondary border border-text-700 rounded-xl shadow-xl w-full md:w-5/12 px-6 py-6 ml-6 md:ml-0">
+                        <span class="text-primary text-sm font-bold">2019 - 2020</span>
+                        <h3 class="font-bold text-text text-xl mt-1">Intern Developer</h3>
+                        <p class="text-text-400 text-sm mb-2">StartUp Hub</p>
+                        <p class="text-sm text-text-500 leading-snug">
+                            Assisted in fixing bugs and writing unit tests. Learned the fundamentals of Agile workflow
+                            and Git version control.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <div class="reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-text mb-4">Let's Work <span
+                            class="text-primary">Together</span></h2>
+                    <p class="text-text-400 mb-8">I am currently available for freelance projects. Have a project in
+                        mind? Send me a message!</p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-primary text-xl">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-text-500">Email Me</p>
+                                <p class="text-text font-medium">hello@johndoe.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-primary text-xl">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-text-500">Call Me</p>
+                                <p class="text-text font-medium">+880 1234 567 890</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-primary text-xl">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-text-500">Location</p>
+                                <p class="text-text font-medium">Dhaka, Bangladesh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal bg-secondary p-8 rounded-2xl border border-text-800">
+                    <form id="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="mb-6">
+                            <label for="name" class="block text-text-400 text-sm mb-2">Your Name</label>
+                            <input type="text" id="name" required
+                                class="w-full bg-dark border border-text-700 rounded-lg px-4 py-3 text-text focus:outline-none focus:border-primary transition placeholder-text-600"
+                                placeholder="John Doe">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-text-400 text-sm mb-2">Your Email</label>
+                            <input type="email" id="email" required
+                                class="w-full bg-dark border border-text-700 rounded-lg px-4 py-3 text-text focus:outline-none focus:border-primary transition placeholder-text-600"
+                                placeholder="john@example.com">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-text-400 text-sm mb-2">Message</label>
+                            <textarea id="message" rows="4" required
+                                class="w-full bg-dark border border-text-700 rounded-lg px-4 py-3 text-text focus:outline-none focus:border-primary transition placeholder-text-600"
+                                placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-primary hover:bg-indigo-600 text-text font-bold py-3 rounded-lg transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark border-t border-text-800 pt-12 pb-8">
+        <div class="container mx-auto px-6 text-center">
+            <a href="#" class="text-2xl font-bold text-text inline-block mb-4">
+                <span class="text-primary">&lt;</span>John<span class="text-primary">/&gt;</span>
+            </a>
+
+            <div class="flex justify-center gap-8 mb-8 text-text-400">
+                <a href="#home" class="hover:text-primary transition">Home</a>
+                <a href="#services" class="hover:text-primary transition">Services</a>
+                <a href="#experience" class="hover:text-primary transition">Work</a>
+                <a href="#contact" class="hover:text-primary transition">Contact</a>
+            </div>
+
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-text-400 hover:bg-primary hover:text-text transition duration-300">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-text-400 hover:bg-primary hover:text-text transition duration-300">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-text-400 hover:bg-primary hover:text-text transition duration-300">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <p class="text-text-600 text-sm">
+                &copy; 2025 John Doe. All rights reserved. Designed for Assignment.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
