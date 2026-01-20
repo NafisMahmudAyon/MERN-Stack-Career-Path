@@ -1,0 +1,20 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "firstName": "Alfredee",
+      "lastName": "Kuhlman",
+      "email": "alfred@test.com",
+      "phone": "98989898",
+      "createdAt": "2026-01-01T10:20:00.000Z"
+    },
+    {
+      "id": "2",
+      "firstName": "Frederick",
+      "lastName": "Jerde",
+      "email": "frederick@test.com",
+      "phone": "54545454",
+      "createdAt": "2026-01-02T12:00:00.000Z"
+    }
+  ]
+}
