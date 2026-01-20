@@ -1,0 +1,12 @@
+{
+  "name": "contact-json-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

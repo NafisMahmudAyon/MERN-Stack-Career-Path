@@ -15,3 +15,7 @@ Please check `assignment-3` folder
 ## Assignment 4 - Make Dom Project
 
 Please check `assignment-4` folder
+
+## Assignment 5 - Complete Contact Application
+
+Please check `assignment-5` folder
