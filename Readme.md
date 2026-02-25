@@ -19,3 +19,7 @@ Please check `assignment-4` folder
 ## Assignment 5 - Complete Contact Application
 
 Please check `assignment-5` folder
+
+## Assignment 6 - Firebase Authentication System (React + Firebase)
+
+Please check `assignment-6` folder
